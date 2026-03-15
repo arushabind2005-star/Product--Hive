@@ -26,8 +26,9 @@
   </nav>
    </div>
   </header>
-  <main class="container p-2 mt-4">
-    <h2>Product Details</h2>
+  <main class="p-2 bg-body-secondary">
+    <div class="container mt-3">
+      <h2>Product Details</h2>
 
 <p>ID: <span id="id"></span></p>
 <p>Name: <span id="name"></span></p>
@@ -35,7 +36,9 @@
 <p>Price: <span id="price"></span></p>
 <p>Rating: <span id="rating"></span></p>
   
-  </main class="container p-2 mt-3">
+    </div>
+    
+  </main class=" p-2 mt-3 ">
   <script >
   
   let id = new URL(window.location.href).searchParams.get("id");
@@ -80,6 +83,6 @@
   document.getElementById("rating").innerText = product.rating;
 
   </script>
-  <footer class="text-center p-2">&copy 2026 ProductHive. All rights reserved.</footer>
+  <footer class="text-center p-2 mt-1 ">&copy 2026 ProductHive. All rights reserved.</footer>
 </body>
 </html>
